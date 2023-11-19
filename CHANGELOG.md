@@ -2,6 +2,13 @@
 
 
 
+## v0.0.10 (2023-11-19)
+
+### Fix
+
+* fix: update ([`b4a137c`](https://github.com/nicrie/test_repo/commit/b4a137c4dc1eba0bd8b16a84e45d093f91672622))
+
+
 ## v0.0.9 (2023-11-19)
 
 ### Build
