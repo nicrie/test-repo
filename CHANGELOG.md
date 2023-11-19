@@ -2,6 +2,17 @@
 
 
 
+## v0.0.3 (2023-11-19)
+
+### Ci
+
+* ci: add version file ([`e61bca2`](https://github.com/nicrie/test-repo/commit/e61bca2f9062d2845624b0f0126cedef950e6250))
+
+### Fix
+
+* fix: another patch ([`ed7d9c0`](https://github.com/nicrie/test-repo/commit/ed7d9c0123929bac776662bab61b2f7ca62d9dab))
+
+
 ## v0.0.2 (2023-11-19)
 
 ### Build
