@@ -15,7 +15,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.semantic_release]
 version_variable = [
-    "test-repo/_version.py:__version__",
+    "test_repo/_version.py:__version__",
     "pyproject.toml:version"
 ]
 
