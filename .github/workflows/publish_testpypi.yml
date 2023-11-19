@@ -1,0 +1,40 @@
+name: Publish package to Test PyPI
+
+on:
+  release:
+    types: [released]
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+
+
+jobs:
+  Publish_Package:
+    runs-on: ubuntu-latest
+    concurrency: release
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+    
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+
+      - name: Setup Poetry
+        uses: abatilo/actions-poetry@v2.1.0
+        with:
+          poetry-version: 1.7.1
+
+      - name: Configure Poetry Settings
+        shell: bash
+        run: python -m poetry config virtualenvs.in-project true
+
+      - name: Verify Poetry Version
+        run: poetry --version
+
+      - name: Install Project Dependencies
+        run: python -m poetry install
+
+      - name: Publish to Test PyPI
+        run: python -m poetry publish -u __token__ -p ${{ secrets.TEST_PYPI }} --repository testpypi --build
