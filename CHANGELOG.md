@@ -2,6 +2,21 @@
 
 
 
+## v0.0.8 (2023-11-19)
+
+### Build
+
+* build: automatically publish to test pypi ([`573080f`](https://github.com/nicrie/test_repo/commit/573080fe33e568bb2805c8930856843bd9f6f5eb))
+
+### Fix
+
+* fix: patch ([`ea22a5e`](https://github.com/nicrie/test_repo/commit/ea22a5e5914b48f18b840a3ee51e70d69cc2ba55))
+
+### Unknown
+
+* Merge branch &#39;main&#39; of https://github.com/nicrie/test_repo ([`72d440c`](https://github.com/nicrie/test_repo/commit/72d440caec8cc5c069f935c8087d65d3ea7a2c51))
+
+
 ## v0.0.7 (2023-11-19)
 
 ### Build
