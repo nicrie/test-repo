@@ -3,12 +3,14 @@ name: Semantic Release
 on:
   push:
     branches:
-      - main
+    - main
 
 jobs:
   release:
+    name: Create Release
     runs-on: ubuntu-latest
-    concurrency: release
+    outputs:
+      released: ${{ steps.semantic_release.outputs.released }}
     permissions:
       id-token: write
       contents: write
@@ -17,7 +19,7 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0
+       fetch-depth: 0
 
     - name: Python Semantic Release
       id: semantic_release
@@ -25,8 +27,33 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
     
-    - name: Publish to TestPyPI
-      if: steps.semantic_release.outputs.released == 'true'
+  test_pypi:
+    name: Publish to Test PyPI
+    needs: release
+    if: needs.release.outputs.released == 'true'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.11
+
+    - name: Setup Poetry
+      uses: abatilo/actions-poetry@v2.1.0
+      with:
+        poetry-version: 1.7.1
+
+    - name: Configure Poetry Settings
+      shell: bash
+      run: python -m poetry config virtualenvs.in-project true
+
+    - name: Verify Poetry Version
+      run: poetry --version
+
+    - name: Publish to Test PyPI
       run: |
         python -m poetry config repositories.testpypi https://test.pypi.org/legacy/
         python -m poetry publish -u __token__ -p ${{ secrets.TEST_PYPI }} --build
