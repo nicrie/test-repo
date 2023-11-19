@@ -2,6 +2,13 @@
 
 
 
+## v0.0.11 (2023-11-19)
+
+### Fix
+
+* fix: bla ([`042a02d`](https://github.com/nicrie/test_repo/commit/042a02d2b8f2a67c8073670f27ec82fbf2bfb3f5))
+
+
 ## v0.0.10 (2023-11-19)
 
 ### Fix
