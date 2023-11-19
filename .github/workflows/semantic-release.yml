@@ -14,11 +14,20 @@ jobs:
       contents: write
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout Code
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
     - name: Python Semantic Release
+      id: semantic_release
       uses: python-semantic-release/python-semantic-release@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Publish to TestPyPI
+      if: steps.semantic_release.outputs.released == 'true'
+      run: |
+        python -m poetry config repositories.testpypi https://test.pypi.org/legacy/
+        python -m poetry publish -u __token__ -p ${{ secrets.TEST_PYPI }} --build
+
