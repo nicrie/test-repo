@@ -2,6 +2,17 @@
 
 
 
+## v0.0.9 (2023-11-19)
+
+### Build
+
+* build: bla ([`c932ca1`](https://github.com/nicrie/test_repo/commit/c932ca149db9190738952cca5020f7b387246245))
+
+### Fix
+
+* fix: new release ([`1c420de`](https://github.com/nicrie/test_repo/commit/1c420de4afdcb9f199278cb752d5295335ab19de))
+
+
 ## v0.0.8 (2023-11-19)
 
 ### Build
