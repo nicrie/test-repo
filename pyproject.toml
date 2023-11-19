@@ -18,6 +18,7 @@ version_variable = [
     "test_repo/_version.py:__version__",
     "pyproject.toml:version"
 ]
+build_command = "pip install poetry && poetry build"
 
 [tool.semantic_release.commit_parser_options]
 allowed_tags = [
