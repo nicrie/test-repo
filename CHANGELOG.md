@@ -2,6 +2,17 @@
 
 
 
+## v0.0.5 (2023-11-19)
+
+### Build
+
+* build: change repo name ([`f35fbd4`](https://github.com/nicrie/test_repo/commit/f35fbd4cd67cbce475ecd5523cf60059a2cf4e22))
+
+### Fix
+
+* fix: typo ([`84b2166`](https://github.com/nicrie/test_repo/commit/84b2166f0a41e988d0e64c33506e562fcf5efe03))
+
+
 ## v0.0.4 (2023-11-19)
 
 ### Fix
