@@ -2,6 +2,17 @@
 
 
 
+## v0.0.2 (2023-11-19)
+
+### Build
+
+* build: update pyproject ([`1b68bad`](https://github.com/nicrie/test-repo/commit/1b68bad46eb21c52bda7f681df0a2204d91df5e9))
+
+### Performance
+
+* perf: new patch ([`34d76d5`](https://github.com/nicrie/test-repo/commit/34d76d58271c29a640abe1876eecc275fb1bebab))
+
+
 ## v0.0.1 (2023-11-19)
 
 ### Chore
