@@ -2,6 +2,17 @@
 
 
 
+## v0.0.7 (2023-11-19)
+
+### Build
+
+* build: build with poetry ([`f5df1f1`](https://github.com/nicrie/test_repo/commit/f5df1f1f43052f5fe7de1f262870f0dc102b9c09))
+
+### Fix
+
+* fix: patch ([`1b09a02`](https://github.com/nicrie/test_repo/commit/1b09a02988012aab12558f8e24b2a3060336a870))
+
+
 ## v0.0.6 (2023-11-19)
 
 ### Build
