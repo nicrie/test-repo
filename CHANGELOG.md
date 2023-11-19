@@ -2,6 +2,21 @@
 
 
 
+## v0.0.6 (2023-11-19)
+
+### Build
+
+* build: add poetry.lock ([`e2b4c55`](https://github.com/nicrie/test_repo/commit/e2b4c55aa33d03468bf29e55c05286edf78f2a9b))
+
+### Fix
+
+* fix: patch ([`5e67d3a`](https://github.com/nicrie/test_repo/commit/5e67d3abf6528d068a9627736fd1b5b2317e449d))
+
+### Unknown
+
+* Merge branch &#39;main&#39; of https://github.com/nicrie/test_repo ([`6e3212c`](https://github.com/nicrie/test_repo/commit/6e3212c882c53c61af11ba557b05f162bf2020db))
+
+
 ## v0.0.5 (2023-11-19)
 
 ### Build
